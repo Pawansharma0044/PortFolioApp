@@ -1,155 +1,247 @@
+
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Portfolio site template</title>
-	<link href="style.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-	<link rel="icon"
-		href="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Repl.it_logo.svg/220px-Repl.it_logo.png">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawan Kumar Sharma - Marriage Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
-
 <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Pawan Kumar Sharma</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#family" class="nav-link">Family</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-	<div class="container">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Pawan Kumar Sharma</h1>
+                <p class="hero-subtitle">Senior IT Analyst | Master's in Computer Science</p>
+                <p class="hero-description">
+                    Well-settled IT professional seeking a life partner to build a meaningful and joyful future together
+                </p>
+            </div>
+            
+            <!-- Main Action Buttons -->
+            <div class="action-buttons">
+                <button class="action-btn primary" onclick="openModal('profile')">
+                    <i class="fas fa-user-circle"></i>
+                    <span>View Profile</span>
+                </button>
+                <button class="action-btn secondary" onclick="openModal('biodata')">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Family & Bio</span>
+                </button>
+                <button class="action-btn tertiary" onclick="openModal('contact')">
+                    <i class="fas fa-phone"></i>
+                    <span>Contact Me</span>
+                </button>
+            </div>
+        </div>
+    </section>
 
-		<!--────────────────Header───────────────-->
-		<header>
-			<a class="logo" href="#home">
-				<img src="https://newsletter-images--timmy-i-chen.repl.co/logo-light.png" alt="repl logo" />
-			</a>
-			<nav>
-				<ul class="nav-bar">
-					<div class="bg"></div>
-					<li><a class="nav-link active" href="#home">Home</a></li>
-					<li><a class="nav-link" href="#projects">Projects</a></li>
-					<li><a class="nav-link" href="#contact">Contact</a></li>
-				</ul>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education</h3>
+                    <p>Master's degree in Computer Science</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Profession</h3>
+                    <p>Senior Analyst at leading tech firm</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Values</h3>
+                    <p>Family-oriented, honest, respectful</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Interests</h3>
+                    <p>Traveling, continuous learning</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<div class="hamburger">
-					<div class="line1"></div>
-					<div class="line2"></div>
-					<div class="line3"></div>
-				</div>
-			</nav>
-		</header>
-		<main>
-			<!--─────────────────Home────────────────-->
-			<div id="home">
-				<div class="filter"></div>
-				<section class="intro">
-					<h3>Pawan Kumar Sharma
-						<hr>
-					</h3>
-					<p>Well-settled IT professional with a balanced approach to modern and traditional values. Family-oriented,
-						ambitious, and looking for a life partner to build a meaningful and joyful future together..</p>
+    <!-- Family Section -->
+    <section id="family" class="family">
+        <div class="container">
+            <h2 class="section-title">Family Background</h2>
+            <div class="family-content">
+                <div class="family-info">
+                    <div class="info-item">
+                        <i class="fas fa-home"></i>
+                        <span>Respectful family with traditional values</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-users"></i>
+                        <span>Close-knit family bonds</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-pray"></i>
+                        <span>Balanced modern and traditional approach</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-					<p>I hold a Master's degree in Computer Science and work as a Senior Analyst with a leading tech firm. I'm
-						passionate about continuous learning and enjoy balancing work and personal life. Outside of work, I enjoy
-						traveling, and spending quality time with family. I'm known to be dependable, calm, and respectful. I value
-						honesty, mutual understanding, transparency, and shared growth in a relationship, and I'm looking forward to
-						building a strong, respectful bond with my future partner..</p>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">Interested in knowing more? Let's connect!</p>
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:pawan@example.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+1234567890" class="social-link">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </section>
 
-					<!--────social media links─────-->
+    <!-- Modals -->
+    <div id="profileModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('profile')">&times;</span>
+            <div class="modal-header">
+                <div class="profile-image">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <h2>Pawan Kumar Sharma</h2>
+                <p>Senior IT Analyst</p>
+            </div>
+            <div class="modal-body">
+                <div class="profile-details">
+                    <div class="detail-item">
+                        <strong>Age:</strong> 28 years
+                    </div>
+                    <div class="detail-item">
+                        <strong>Height:</strong> 5'8"
+                    </div>
+                    <div class="detail-item">
+                        <strong>Education:</strong> Master's in Computer Science
+                    </div>
+                    <div class="detail-item">
+                        <strong>Profession:</strong> Senior Analyst
+                    </div>
+                    <div class="detail-item">
+                        <strong>Location:</strong> [Your City]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-					<div class="social-media">
-						<a href="#" target="_blank"><i class='fab fa-codepen'></i></a>
-						<a href="#" target="_blank"><i class='fab fa-twitter'></i></a>
-						<a href="#" target="_blank"><i class='fab fa-github'></i></a>
-						<a href="#" target="_blank"><i class='fab fa-linkedin-in'></i></a>
-						<a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-					</div>
+    <div id="biodataModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('biodata')">&times;</span>
+            <div class="modal-header">
+                <h2>Family & Personal Details</h2>
+            </div>
+            <div class="modal-body">
+                <div class="biodata-section">
+                    <h3>Personal Information</h3>
+                    <p>I am a dependable, calm, and respectful person who values honesty, mutual understanding, and transparency in relationships. I believe in continuous learning and maintaining a healthy work-life balance.</p>
+                </div>
+                <div class="biodata-section">
+                    <h3>Family Background</h3>
+                    <p>Coming from a close-knit family that values both modern education and traditional values. We believe in mutual respect and supporting each other's growth.</p>
+                </div>
+                <div class="biodata-section">
+                    <h3>Looking For</h3>
+                    <p>Seeking a life partner who shares similar values of respect, understanding, and growth. Someone who appreciates both traditional values and modern perspectives.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-				</section>
-			</div>
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('contact')">&times;</span>
+            <div class="modal-header">
+                <h2>Contact Information</h2>
+            </div>
+            <div class="modal-body">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <p>pawan.sharma@email.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong>Phone</strong>
+                            <p>+91 98765 43210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Location</strong>
+                            <p>[Your City, State]</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <strong>LinkedIn</strong>
+                            <p>linkedin.com/in/pawansharma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-			<!--───────────────Projects───────────────-->
-			<div id="projects">
-				<h3>My Projects.
-					<hr>
-				</h3>
-				<p>Here are some of my projects, you may like.</p>
-				<div class="work-box">
-					<div class="work">
-						<!--───────────────card───────────────-->
-						<div class="card">
-							<img class="work-img"
-								src="https://images.unsplash.com/photo-1518611507436-f9221403cca2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80">
-							<a href="" target="_blank"> <!--Link to project-->
-								<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div>
-							</a>
-						</div>
-						<div class="card">
-							<img class="work-img"
-								src="https://images.unsplash.com/photo-1462642109801-4ac2971a3a51?ixlib=rb-1.2.1&auto=format&fit=crop&w=1266&q=80">
-							<a href="" target="_blank"> <!--Link to project-->
-								<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div>
-							</a>
-						</div>
-						<div class="card">
-							<img class="work-img"
-								src="https://images.unsplash.com/photo-1485815457792-d1a966f9bde0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
-							<a href="" target="_blank"> <!--Link to project-->
-								<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div>
-							</a>
-						</div>
-						<div class="card">
-							<img class="work-img"
-								src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-							<a href="" target="_blank"> <!--Link to project-->
-								<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div>
-							</a>
-						</div>
-						<div class="card">
-							<img class="work-img"
-								src="https://images.unsplash.com/photo-1535556116002-6281ff3e9f36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=781&q=80">
-							<a href="" target="_blank"> <!--Link to project-->
-								<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div>
-							</a>
-						</div>
-						<div class="card">
-							<img class="work-img"
-								src="https://images.unsplash.com/photo-1483546416237-76fd26bbcdd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
-							<a href="" target="_blank"> <!--Link to project-->
-								<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!--──────────────Contact────────────────-->
-			<div id="contact">
-				<!--────social media links─────-->
-				<h3>Contact.
-					<hr>
-				</h3>
-				<p>Feel free to contact me on my social media.</p>
-				<div class="social-media">
-					<a href="#" target="_blank"><i class='fab fa-codepen'></i></a>
-					<a href="#" target="_blank"><i class='fab fa-twitter'></i></a>
-					<a href="#" target="_blank"><i class='fab fa-github'></i></a>
-					<a href="#" target="_blank"><i class='fab fa-linkedin-in'></i></a>
-					<a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-				</div>
-			</div>
-
-		</main>
-		<footer class="copyright">© 2020
-			<a href="https://repl.it/@lilykhan" target="_blank"> Lilykhan.</a>
-		</footer>
-
-	</div>
-	<!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-
+    <script src="script.js"></script>
 </body>
-
 </html>
